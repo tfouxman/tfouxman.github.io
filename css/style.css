@@ -116,8 +116,11 @@ label #sign-two {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+}
+
+.banner-text > * {
+    margin: 1em 0;
 }
 
 .banner-text h2 {
@@ -128,17 +131,24 @@ label #sign-two {
     text-align: center;
 }
 
-.banner-text img {
-    max-width: 35%;
+.banner-image {
+    max-width: 55%;
+    min-width: 15%;
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+.banner-image img {
+    width: 100%;
     height: auto;
-    margin: 0 auto;
     border-radius: 50%;
-    flex-wrap: wrap;
-    flex: auto;
-    white-space: nowrap;
 }
 
 @media (max-width: 870px) {
+    .banner-text h2 {
+        font-size: 36px;
+    }
+
     label #sign-one {
         display: block;
     }
@@ -183,15 +193,30 @@ label #sign-two {
     }
 }
 
-.typewriter h2{
+.typewriter {
+    align-self: flex-end;
+}
+
+.typewriter h2 {
     overflow: hidden;
     white-space: nowrap;
+    overflow-wrap: break-word;
     margin: 0 auto;
     border-right: .15em solid orange;
     letter-spacing: .2em;
     animation: 
         typing 2s steps(20, end),
         blink-caret .75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
 
 /* The typing effect */
@@ -205,3 +230,4 @@ label #sign-two {
     from, to { border-color: transparent }
     50% { border-color: orange; }
 }
+
