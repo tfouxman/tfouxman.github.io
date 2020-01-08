@@ -93,6 +93,11 @@ label #sign-two {
     display: none;
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 .banner-area {
     background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/portbg.jpg);
     -webkit-background-size: cover;
@@ -121,7 +126,6 @@ label #sign-two {
     margin-top: auto;
     font-size: 56px;
     text-align: center;
-    flex: 0 0 100%;
 }
 
 .banner-text img {
@@ -129,7 +133,9 @@ label #sign-two {
     height: auto;
     margin: 0 auto;
     border-radius: 50%;
-    flex: 0 0 100%;
+    flex-wrap: wrap;
+    flex: auto;
+    white-space: nowrap;
 }
 
 @media (max-width: 870px) {
@@ -177,6 +183,25 @@ label #sign-two {
     }
 }
 
-.space {
-    display: flex;
+.typewriter h2{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: .15em solid orange;
+    letter-spacing: .2em;
+    animation: 
+        typing 2s steps(20, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
