@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand|Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c640d7528.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -18,14 +20,21 @@
                 <i class="fa fa-times" id="sign-two"></i>
             </label>
             <ul>
-                <div class="left">
-                    <li><a href="#"><h1>TF</h1></a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Experience</a></li>
-                </div>
-                <div class="right">
-                    <li><a href="gallery.html" onClick="return confirm('The photo gallery contains large images that may use a lot of data. Are you sure you want to continue on your current connection?')" target="">Photo Gallery</a></li>
+                <div class="flex">
+                    <div class="left">
+                        <li><a href="#"><h2>TF</h2></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Experience</a></li>
+                    </div>
+                    <div class="right flex-center">
+                        <li><a target=" " href="https://www.linkedin.com/in/tomfouxman/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                        <li><a target=" " href="https://github.com/tfouxman/"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li><a target=" " href="https://www.instagram.com/tomfouxman/"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <div class="gallery">
+                            <li><a href="gallery.html" onClick="return confirm('The photo gallery contains large images that may use a lot of data. Are you sure you want to continue on your current connection?')" target="">Photo Gallery</a></li>
+                        </div>
+                    </div>
                 </div>
             </ul>
         </div>
@@ -40,6 +49,12 @@
             </div>
         </div>
     </nav>
-    <h1>About</h1>
+    <div class="container">
+        <div class="container-text">
+            <div class="item-1">
+                <h1>About</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
