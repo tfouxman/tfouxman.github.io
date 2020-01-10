@@ -511,7 +511,8 @@ label #sign-two {
 
 .container-1 {
     font-family: Quicksand, Roboto Mono, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #000;
+    background-color: rgb(97, 92, 76);
+    background: linear-gradient(rgb(255, 253, 247), rgb(255, 201, 23)) 
 }
 
 .container-1 ul {
@@ -586,6 +587,10 @@ label #sign-two {
 
 .aquamarine {
     background-color: aquamarine;
+}
+
+.min-w {
+    min-width: 10%;
 }
 
 /* ***** CONTAINER 1 END ***** */
