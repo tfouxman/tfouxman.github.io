@@ -1,15 +1,10 @@
-$("typing").on('load', function(){
-    typing = document.querySelector("typewriter")
-    document.body.classList.add('js-loading');
-    typing.addEventListener("load", removeLoading);
-});
-
-function removeLoading() {
-    document.body.classList.remove('js-loading');
-}
-
 let anchorlinks = document.querySelectorAll('a[href^="#"]');
 window.sr = ScrollReveal({reset: true});
+
+$(document).ready(function() {
+    console.log("meme");
+    $("#typewriter").addClass("typewriter").removeClass("hidden"); 
+});
 
 for (let item of anchorlinks) {
     item.addEventListener('click', (e)=> {

@@ -556,6 +556,10 @@ label #sign-two {
     }
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .typewriter {
     margin: auto 0;
 }
