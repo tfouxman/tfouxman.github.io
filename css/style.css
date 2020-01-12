@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+/* ***** SCROLL REVEAL START ***** */
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+
+/* ***** SCROLL REVEAL END ***** */
+
 /* ***** CONTAINERS FRAMEWORK START ***** */
 
 .container {
@@ -207,7 +216,6 @@
     height: auto; /* maintain aspect ratio*/
     margin: auto;
     border-radius: 15px;
-    mix-blend-mode: multiply;
 }
 
 /* ***** CONTAINERS FRAMEWORK END ***** */
@@ -223,6 +231,7 @@ body {
     top: 0;
     width: 100%;
     background: rgba(0,0,0,0.6);
+    z-index: 100;
 }
 
 nav {
@@ -574,8 +583,8 @@ label #sign-two {
     background-color: #cc2366;
 }
 
-.darkpink {
-    background-color: #bc1888;
+.lightred {
+    background-color: #dd3131;
 }
 
 .aqua {
@@ -613,6 +622,10 @@ label #sign-two {
 
 .site-list p:last-child {
     border: none;
+}
+
+@media (max-width: 1150px) {
+    
 }
 
 /* ***** CONTAINER 1 END ***** */
