@@ -207,6 +207,7 @@
     height: auto; /* maintain aspect ratio*/
     margin: auto;
     border-radius: 15px;
+    mix-blend-mode: multiply;
 }
 
 /* ***** CONTAINERS FRAMEWORK END ***** */
@@ -591,6 +592,27 @@ label #sign-two {
 
 .min-w {
     min-width: 10%;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.intro h2 {
+    font-size: 40px;
+}
+
+.site-list {
+    margin-top: 5px;
+}
+
+.site-list p{
+    font-family: Roboto Mono;
+    border-bottom: 1px solid black;
+}
+
+.site-list p:last-child {
+    border: none;
 }
 
 /* ***** CONTAINER 1 END ***** */
