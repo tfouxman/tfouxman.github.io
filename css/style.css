@@ -3,6 +3,85 @@
     padding: 0;
 }
 
+/* ***** HOVER.CSS FROM GITHUB START ***** */
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* ************ */
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+@keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/* ***** HOVER.CSS FROM GITHUB END ***** */
+
 /* ***** SCROLL REVEAL START ***** */
 
 html.sr .load-hidden {
@@ -307,7 +386,7 @@ nav h2:hover {
 }
 
 nav .right a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(251, 255, 0);
 }
 
 .fa-linkedin:hover {
@@ -519,6 +598,10 @@ label #sign-two {
 
 /* ***** CONTAINER 1 START ***** */
 
+.boxes-res {
+    display: none;
+}
+
 .container-1 {
     font-family: Quicksand, Roboto Mono, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(97, 92, 76);
@@ -609,10 +692,12 @@ label #sign-two {
 
 .intro h2 {
     font-size: 40px;
+    width: auto;
 }
 
 .site-list {
     margin-top: 5px;
+    display: inline-block;
 }
 
 .site-list p{
@@ -625,7 +710,41 @@ label #sign-two {
 }
 
 @media (max-width: 1150px) {
-    
+    .container-1 {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-box-orient: vertical; 
+        -moz-box-orient: vertical;
+        -box-orient: vertical;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .boxes {
+        display: none;
+    }
+
+    .boxes-res {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-box-orient: vertical; 
+        -moz-box-orient: vertical;
+        -box-orient: vertical;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1 1 0;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
 }
 
 /* ***** CONTAINER 1 END ***** */

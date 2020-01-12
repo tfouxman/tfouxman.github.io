@@ -13,7 +13,7 @@ for (let item of anchorlinks) { // relitere
     })
 }
 
-let boxContainer = document.getElementsByClassName('boxes');
+let boxContainer = document.querySelectorAll('.boxes, .boxes-res');
 let boxes = [];
 
 for (var i = 0; i < boxContainer.length; i++) {
