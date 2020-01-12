@@ -1,3 +1,10 @@
+var typing = document.querySelector("typewriter")
+document.body.classList.add('js-loading');
+typing.addEventListener("load", removeLoading);
+function removeLoading() {
+    document.body.classList.remove('js-loading');
+}
+
 let anchorlinks = document.querySelectorAll('a[href^="#"]');
 window.sr = ScrollReveal({reset: true});
 
@@ -21,13 +28,20 @@ for (var i = 0; i < boxContainer.length; i++) {
 }
 
 function allBoxes(node) {
+    let config = {
+        enter: 'bottom',
+        wait: '0.5s',
+        move: '20px',
+        scale: { direction: 'up', power: '50%'}
+    }
     for (var i = 0; i < node.childNodes.length; i++) {
         var child = node.childNodes[i];
         allBoxes(child);
     }
     if (node.tagName == 'DIV' && !node.firstChild) {
         let duration = Math.random() * 2000;
-        sr.reveal(node, {duration: duration});
+        config.duration = duration;
+        sr.reveal(node, config);
     }
 }
 

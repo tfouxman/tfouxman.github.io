@@ -690,6 +690,10 @@ label #sign-two {
     font-size: 20px;
 }
 
+.intro a {
+    font-weight: bold;
+}
+
 .intro h2 {
     font-size: 40px;
     width: auto;
@@ -742,8 +746,12 @@ label #sign-two {
         flex: 1 1 0;
     }
 
+    .intro h2 {
+        font-size: 24px;
+    }
+
     .intro {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
