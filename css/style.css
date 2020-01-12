@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 /* ***** HOVER.CSS FROM GITHUB START ***** */
 
 @-webkit-keyframes hvr-buzz {
@@ -680,10 +686,6 @@ label #sign-two {
 
 .aquamarine {
     background-color: aquamarine;
-}
-
-.min-w {
-    min-width: 10%;
 }
 
 .intro {

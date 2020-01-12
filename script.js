@@ -1,6 +1,9 @@
-var typing = document.querySelector("typewriter")
-document.body.classList.add('js-loading');
-typing.addEventListener("load", removeLoading);
+$("typing").on('load', function(){
+    typing = document.querySelector("typewriter")
+    document.body.classList.add('js-loading');
+    typing.addEventListener("load", removeLoading);
+});
+
 function removeLoading() {
     document.body.classList.remove('js-loading');
 }
@@ -8,7 +11,7 @@ function removeLoading() {
 let anchorlinks = document.querySelectorAll('a[href^="#"]');
 window.sr = ScrollReveal({reset: true});
 
-for (let item of anchorlinks) { // relitere 
+for (let item of anchorlinks) {
     item.addEventListener('click', (e)=> {
         let hashval = item.getAttribute('href')
         let target = document.querySelector(hashval)
