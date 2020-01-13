@@ -281,6 +281,10 @@ html.sr .load-hidden {
     align-self: space-around;
 }
 
+.flex-110 {
+    flex: 1 0 0;
+}
+
 .flex-w-33 {
     width: 33%;
 }
@@ -625,6 +629,10 @@ label #sign-two {
     text-align: left;
 }
 
+.container-1 a {
+    color: inherit;
+}
+
 
 .borders > * {
     border-radius: 15px;
@@ -696,10 +704,6 @@ label #sign-two {
     font-size: 20px;
 }
 
-.intro a {
-    font-weight: bold;
-}
-
 .intro h2 {
     font-size: 40px;
     width: auto;
@@ -762,3 +766,27 @@ label #sign-two {
 }
 
 /* ***** CONTAINER 1 END ***** */
+
+/* ***** CONTAINER 2 START ***** */
+
+.container-2 {
+    background: linear-gradient(rgb(255, 201, 23), rgb(255, 253, 247));
+    padding-top: 50px;
+    text-align: center;
+}
+
+.container-2 h1 {
+    font-size: 50px;
+}
+
+.container-2 .flex-column {
+    flex: 1 1 0;
+}
+
+@media (max-width: 1150px) {
+    .container-2 .flex-column {
+        flex: 1 1 100%;
+    }
+}
+
+/* ***** CONTAINER 2 END ***** */

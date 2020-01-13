@@ -5,7 +5,8 @@ window.sr = ScrollReveal({reset: true});
 // jQuery to wait for the document to load before starting typing and revealing animations
 $(document).ready(function() {
     $("#typewriter").addClass("typewriter").removeClass("hidden");
-    sr.reveal('.banner-image', {duration: 3000, scale: 0});
+    $(".load-hidden").removeClass("load-hidden");
+    sr.reveal('.banner-image', {duration: 2500, scale: 0, reset: false});
 });
 
 for (let item of anchorlinks) {
@@ -37,9 +38,6 @@ function allBoxes(node) {
     if (node.tagName == 'DIV' && !node.firstChild) {
         let side = sides[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
         let config = {
-            enter: 'bottom',
-            wait: '0.5s',
-            move: '20px',
             scale: 0.5,
             origin: side,
             distance: '5px'
@@ -50,4 +48,4 @@ function allBoxes(node) {
     }
 }
 
-sr.reveal('.intro', { duration: 2200, scale: 0.7 });
+sr.reveal('.intro', { duration: 2200, scale: 0.7, origin: 'top', distance: '50px' });

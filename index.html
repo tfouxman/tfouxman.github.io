@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P2CFC3');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +22,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P2CFC3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="load-hidden">
         <div class="sticky">
             <input type="checkbox" id="res-menu">
             <label for="res-menu">
@@ -92,11 +103,12 @@
                     <img src="images/westernlogo.jpg" alt="">
                 </div>
                 <br>
-                <p>On this site you will be able to find my:</p>
+                <p>On this site you will be able to find:</p>
                 <div class="text-a-c site-list">
-                    <p>All of my <a href="#top">projects</a></p>
-                    <p>All of my <a href="#top">work experience</a></p>
-                    <p>Travel <a href="#top">photo gallery</a></p>
+                    <p>All of my <a class="hvr-pulse-grow" href="#top">projects</a></p>
+                    <p>All of my <a class="hvr-pulse-grow" href="#top">work experience</a></p>
+                    <p>Travel <a class="hvr-pulse-grow" href="gallery.html" onClick="return confirm('The photo gallery contains large images that may use a lot of data. Are you sure you want to continue on your current connection?')">photo gallery</a></p>
+                    <p>My <a class="hvr-pulse-grow" href="files/TomFouxman_Resume.pdf" target="_blank">resum&eacute;</a></p>
                 </div>
             </div>
             <div class="flex-row flex-gr-1 borders reset load-hidden boxes">
@@ -127,8 +139,30 @@
             </div>
         </div>
     </div>
-    <div id="about">
+    <div class="container-2" id="about">
         <h1>About</h1>
+        <div class="flex-row j-c-sa flex-gr-1 borders reset">
+            <div class="flex-column flex-gr-1 red">
+                <h2>Affiliations</h2>
+                <div class="about-item">
+                    <h3>Western AI (Medical Imaging Project Team)</h3>
+                </div>
+            </div>
+            <div class="flex-column flex-gr-1 yellow">
+                <h2>Education</h2>
+                <div class="about-item">
+                    <h3>Western University</h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row j-c-sa flex-gr-1 borders reset">
+            <div class="flex-column flex-gr-1 orange">
+                <h2>Interests</h2>
+            </div>
+            <div class="flex-column flex-gr-1 lightred">
+                <h2>Contact</h2>
+            </div>
+        </div>
     </div>
 </body>
 </html>
