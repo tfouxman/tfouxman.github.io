@@ -21,7 +21,7 @@ for (let item of anchorlinks) {
     })
 }
 
-let boxContainer = document.querySelectorAll('.boxes, .boxes-res');
+let boxContainer = document.querySelectorAll('.boxes, .boxes-res, .boxes-intro');
 let boxes = [];
 
 for (var i = 0; i < boxContainer.length; i++) {
@@ -35,7 +35,7 @@ function allBoxes(node) {
     }
     let minmax = [2, 4];
     let sides = ['top', 'bottom', 'left', 'right']
-    if (node.tagName == 'DIV' && !node.firstChild) {
+    if ((node.tagName == 'DIV' && !node.firstChild) || (node.parentNode.classList.contains("about")) && node.nodeType != Node.TEXT_NODE) {
         let side = sides[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
         let config = {
             scale: 0.5,

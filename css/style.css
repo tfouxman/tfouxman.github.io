@@ -282,7 +282,7 @@ html.sr .load-hidden {
 }
 
 .flex-110 {
-    flex: 1 0 0;
+    flex: 1 1 0;
 }
 
 .flex-w-33 {
@@ -305,6 +305,88 @@ html.sr .load-hidden {
     height: auto; /* maintain aspect ratio*/
     margin: auto;
     border-radius: 15px;
+}
+
+.borders > * {
+    border-radius: 15px;
+    margin: 5px 5px;
+}
+
+.reset {
+    border-radius: 0;
+    margin: 0;
+}
+
+.text-a-c {
+    text-align: center;
+}
+
+.text-a-l {
+    text-align: left;
+}
+
+.padding-5px {
+    padding: 5px 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.orange {
+    background-color: #e6683c;
+}
+
+.yellow {
+    background-color: #f09433;
+}
+
+.red {
+    background-color: #dc2743;
+}
+
+.lightred {
+    background-color: #dd3131;
+}
+
+.orange-t {
+    background-color: rgba(230, 104, 59, 0.5);
+}
+
+.yellow-t {
+    background-color: rgba(240, 148, 51, 0.6);
+}
+
+.red-t {
+    background-color: rgba(220, 39, 67, 0.6);
+}
+
+.lightred-t {
+    background-color: rgba(221, 49, 49, 0.6);
+}
+
+.pink {
+    background-color: #cc2366;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.babyblue {
+    background-color: #0e76a8;
+}
+
+.aquamarine {
+    background-color: aquamarine;
 }
 
 /* ***** CONTAINERS FRAMEWORK END ***** */
@@ -352,7 +434,7 @@ nav .left {
 }
 
 nav .right {
-    font-family: Quicksand, Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Quicksand, sans-serif;
 }
 
 nav .right .gallery {
@@ -466,7 +548,7 @@ label #sign-two {
 }
 
 .banner-text h2 {
-    font-family: Roboto Mono;
+    font-family: Roboto Mono, monospace;
     color: #fff;
     font-size: 56px;
     text-align: center;
@@ -617,7 +699,7 @@ label #sign-two {
 }
 
 .container-1 {
-    font-family: Quicksand, Roboto Mono, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Quicksand, sans-serif;
     background-color: rgb(97, 92, 76);
     background: linear-gradient(rgb(255, 253, 247), rgb(255, 201, 23)) 
 }
@@ -631,73 +713,6 @@ label #sign-two {
 
 .container-1 a {
     color: inherit;
-}
-
-
-.borders > * {
-    border-radius: 15px;
-    margin: 5px 5px;
-}
-
-.reset {
-    border-radius: 0;
-    margin: 0;
-}
-
-.text-a-c {
-    text-align: center;
-}
-
-.text-a-l {
-    text-align: left;
-}
-
-.padding-5px {
-    padding: 5px 5px;
-}
-
-.mt-10 {
-    margin-top: 10px;
-}
-
-.h-100 {
-    height: 100%;
-}
-
-.white {
-    background-color: #fff;
-}
-
-.orange {
-    background-color: #e6683c;
-}
-
-.yellow {
-    background-color: #f09433;
-}
-
-.red {
-    background-color: #dc2743;
-}
-
-.pink {
-    background-color: #cc2366;
-}
-
-.lightred {
-    background-color: #dd3131;
-}
-
-.aqua {
-    background-color: aqua;
-}
-
-.babyblue {
-    background-color: #0e76a8;
-}
-
-.aquamarine {
-    background-color: aquamarine;
 }
 
 .intro {
@@ -715,7 +730,7 @@ label #sign-two {
 }
 
 .site-list p{
-    font-family: Roboto Mono;
+    font-family: Roboto Mono, monospace;
     border-bottom: 1px solid black;
 }
 
@@ -738,7 +753,7 @@ label #sign-two {
         justify-content: space-between;
     }
 
-    .boxes {
+    .boxes-intro {
         display: none;
     }
 
@@ -771,12 +786,16 @@ label #sign-two {
 
 .container-2 {
     background: linear-gradient(rgb(255, 201, 23), rgb(255, 253, 247));
-    padding-top: 50px;
-    text-align: center;
 }
 
 .container-2 h1 {
     font-size: 50px;
+}
+
+.container-2 h1,
+.container-2 h2 {
+    font-family: Quicksand, sans-serif;
+    text-align: center;
 }
 
 .container-2 .flex-column {
@@ -787,6 +806,19 @@ label #sign-two {
     .container-2 .flex-column {
         flex: 1 1 100%;
     }
+}
+    
+.about-item {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 10px;
+}
+
+.about-item.left {
+
+}
+
+.about-item.right {
+
 }
 
 /* ***** CONTAINER 2 END ***** */

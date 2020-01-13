@@ -15,7 +15,7 @@
     <link rel="icon" href="/images/carrot.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto+Mono|Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c640d7528.js" crossorigin="anonymous"></script>
     <script language="JavaScript" type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -66,7 +66,7 @@
     <div class="separator"></div>
     <div class="container" id="introduction">
         <div class="container-1 container-area flex-row flex-gr-1 borders">
-            <div class="flex-row flex-gr-1 borders reset load-hidden boxes">
+            <div class="flex-row flex-gr-1 borders reset load-hidden boxes-intro">
                 <div class="flex-column flex-gr-1 borders reset">
                     <div class="flex-gr-2 red"></div>
                     <div class="flex-gr-4 yellow"></div>
@@ -105,13 +105,13 @@
                 <br>
                 <p>On this site you will be able to find:</p>
                 <div class="text-a-c site-list">
-                    <p>All of my <a class="hvr-pulse-grow" href="#top">projects</a></p>
-                    <p>All of my <a class="hvr-pulse-grow" href="#top">work experience</a></p>
+                    <p>My <a class="hvr-pulse-grow" href="#top">projects</a></p>
+                    <p>My <a class="hvr-pulse-grow" href="#top">work experience</a></p>
                     <p>Travel <a class="hvr-pulse-grow" href="gallery.html" onClick="return confirm('The photo gallery contains large images that may use a lot of data. Are you sure you want to continue on your current connection?')">photo gallery</a></p>
                     <p>My <a class="hvr-pulse-grow" href="files/TomFouxman_Resume.pdf" target="_blank">resum&eacute;</a></p>
                 </div>
             </div>
-            <div class="flex-row flex-gr-1 borders reset load-hidden boxes">
+            <div class="flex-row flex-gr-1 borders reset load-hidden boxes-intro">
                 <div class="flex-column flex-gr-1 borders reset">
                     <div class="flex-gr-1 orange"></div>
                 </div>
@@ -139,28 +139,61 @@
             </div>
         </div>
     </div>
-    <div class="container-2" id="about">
-        <h1>About</h1>
-        <div class="flex-row j-c-sa flex-gr-1 borders reset">
-            <div class="flex-column flex-gr-1 red">
-                <h2>Affiliations</h2>
-                <div class="about-item">
-                    <h3>Western AI (Medical Imaging Project Team)</h3>
+    <div class="container" id="about">
+        <div class="container-2 container-area flex-row flex-gr-1 borders">
+            <div class="flex-column borders boxes about">
+                <div class="red borders">
+                    <h1>About</h1>
                 </div>
-            </div>
-            <div class="flex-column flex-gr-1 yellow">
-                <h2>Education</h2>
-                <div class="about-item">
-                    <h3>Western University</h3>
+                <div class="flex-row j-c-sa flex-gr-1 borders reset about">
+                    <div class="flex-column flex-gr-1 red-t">
+                        <h2>Affiliations</h2>
+                        <div class="flex-row flex-gr-1">
+                            <div class="flex-gr-1 about-item left flex-110">
+                                <h3>Western AI</h3>
+                            </div>
+                            <div class="about-item right flex-110">
+                                <h3>2019 - Present</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-gr-1 yellow-t">
+                        <h2>Affiliations</h2>
+                        <div class="flex-row flex-gr-1">
+                            <div class="flex-gr-1 about-item  left">
+                                <h3>Western AI</h3>
+                            </div>
+                            <div class="about-item right">
+                                <h3>2019 - Present</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="flex-row j-c-sa flex-gr-1 borders reset">
-            <div class="flex-column flex-gr-1 orange">
-                <h2>Interests</h2>
-            </div>
-            <div class="flex-column flex-gr-1 lightred">
-                <h2>Contact</h2>
+                <div class="flex-row j-c-sa flex-gr-1 borders reset about">
+                    <div class="flex-column flex-gr-1 orange-t">
+                        <h2>Affiliations</h2>
+                        <div class="flex-row flex-gr-1">
+                            <div class="flex-110 about-item left">
+                                <h3>Western AI</h3>
+                                <p>Western University's on-campus undergraduate AI community focused in educating students in important AI topics.</p>
+                            </div>
+                            <div class="flex-110 about-item right">
+                                <h3>2019 - Present</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-gr-1 lightred-t">
+                        <h2>Affiliations</h2>
+                        <div class="flex-row flex-gr-1 left">
+                            <div class="flex-gr-1 about-item left">
+                                <h3>Western AI</h3>
+                            </div>
+                            <div class="about-item right">
+                                <h3>2019 - Present</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
