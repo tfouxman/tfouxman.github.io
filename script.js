@@ -48,4 +48,4 @@ function allBoxes(node) {
     }
 }
 
-sr.reveal('.intro', { duration: 2200, scale: 0.7, origin: 'top', distance: '50px' });
+sr.reveal('.intro', { duration: 1400, scale: 0.7, origin: 'top', distance: '50px' });

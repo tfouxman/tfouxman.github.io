@@ -341,52 +341,20 @@ html.sr .load-hidden {
     background-color: #fff;
 }
 
-.orange {
-    background-color: #e6683c;
+.purple {
+    background-color: #6613d3;
 }
 
-.yellow {
-    background-color: #f09433;
+.lightpurple {
+    background-color: #7520d6;
 }
 
-.red {
-    background-color: #dc2743;
+.gray {
+    background-color: #8a8a8a;
 }
 
-.lightred {
-    background-color: #dd3131;
-}
-
-.orange-t {
-    background-color: rgba(230, 104, 59, 0.5);
-}
-
-.yellow-t {
-    background-color: rgba(240, 148, 51, 0.6);
-}
-
-.red-t {
-    background-color: rgba(220, 39, 67, 0.6);
-}
-
-.lightred-t {
-    background-color: rgba(221, 49, 49, 0.6);
-}
-
-.pink {
-    background-color: #cc2366;
-}
-
-.aqua {
-    background-color: aqua;
-}
-
-.babyblue {
-    background-color: #0e76a8;
-}
-
-.aquamarine {
-    background-color: aquamarine;
+.darkgray {
+    background-color: #3a3a3a;
 }
 
 /* ***** CONTAINERS FRAMEWORK END ***** */
@@ -701,7 +669,7 @@ label #sign-two {
 .container-1 {
     font-family: Quicksand, sans-serif;
     background-color: rgb(97, 92, 76);
-    background: linear-gradient(rgb(255, 253, 247), rgb(255, 201, 23)) 
+    background: linear-gradient(rgb(255, 253, 247), rgb(87, 84, 77)) 
 }
 
 .container-1 ul {
@@ -785,7 +753,7 @@ label #sign-two {
 /* ***** CONTAINER 2 START ***** */
 
 .container-2 {
-    background: linear-gradient(rgb(255, 201, 23), rgb(255, 253, 247));
+    background: linear-gradient(rgb(87, 84, 77), rgb(255, 253, 247));
 }
 
 .container-2 h1 {
@@ -813,12 +781,30 @@ label #sign-two {
     padding: 5px 10px;
 }
 
-.about-item.left {
-
+.title {
+    margin: 40px;
+    max-width: 500px;
 }
 
-.about-item.right {
-
+.about-item-text {
+    min-width: 0;
+    white-space: initial;
 }
+
+.about-item h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.about-item .flex-image {
+    width: auto;
+    padding-right: 10px;
+}
+
+.about-item img {
+    max-width: 75px;
+    min-width: 45px;
+}
+
 
 /* ***** CONTAINER 2 END ***** */
