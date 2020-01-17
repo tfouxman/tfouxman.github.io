@@ -730,12 +730,6 @@ label #sign-two {
 .container-2 .flex-column {
     flex: 1 1 0;
 }
-
-@media (max-width: 1150px) {
-    .container-2 .flex-column {
-        flex: 1 1 100%;
-    }
-}
     
 .about-item {
     font-family: 'Open Sans', sans-serif;
@@ -767,5 +761,10 @@ label #sign-two {
     min-width: 45px;
 }
 
+@media (max-width: 1150px) {
+    .container-2 .flex-column {
+        flex: 1 1 100%;
+    }
+}
 
 /* ***** CONTAINER 2 END ***** */
