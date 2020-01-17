@@ -35,7 +35,7 @@ function allBoxes(node) {
     }
     let minmax = [2, 4];
     let sides = ['top', 'bottom', 'left', 'right']
-    if ((node.tagName == 'DIV' && !node.firstChild) || (node.parentNode.classList.contains("about")) && node.nodeType != Node.TEXT_NODE) {
+    if ((node.tagName == 'DIV' && !node.firstChild) && node.nodeType != Node.TEXT_NODE) {
         let side = sides[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
         let config = {
             scale: 0.5,
