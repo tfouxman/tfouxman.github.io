@@ -715,6 +715,7 @@ label #sign-two {
 
 .container-2 {
     background: linear-gradient(rgb(87, 84, 77), rgb(255, 253, 247));
+    height: auto;
 }
 
 .container-2 h1 {
@@ -730,5 +731,44 @@ label #sign-two {
 .container-2 .title {
     margin: 40px;
     max-width: 500px;
+}
+
+.about-item {
+    margin: 1em;
+}
+
+.about-item h3 {
+    margin-bottom: 0.5em;
+}
+
+.about-item-c {
+    position: relative;
+}
+
+.about-item-v {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.about-image {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+.about-image img {
+    max-width: 80px;
+}
+
+.about-container {
+
+}
+
+@media (min-width: 1150px) {
+
 }
 /* ***** CONTAINER 2 END ***** */
