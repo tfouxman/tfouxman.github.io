@@ -102,9 +102,7 @@ html.sr .load-hidden {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-box-orient: horizontal; 
-    -moz-box-orient: horizontal;
-    -box-orient: horizontal;
+    -webkit-flex-direction: row; 
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -115,9 +113,7 @@ html.sr .load-hidden {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    -webkit-box-orient: vertical; 
-    -moz-box-orient: vertical;
-    -box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -313,7 +309,7 @@ html.sr .load-hidden {
 }
 
 .purple {
-    background-color: #6613d3;
+    background-color: #4f2d83;
 }
 
 .lightpurple {
@@ -718,6 +714,11 @@ label #sign-two {
     height: auto;
 }
 
+.container-2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .container-2 h1 {
     font-size: 50px;
 }
@@ -733,6 +734,10 @@ label #sign-two {
     max-width: 500px;
 }
 
+.about-container {
+    padding: 1em 0;
+}
+
 .about-item {
     margin: 1em;
 }
@@ -743,6 +748,7 @@ label #sign-two {
 
 .about-item-c {
     position: relative;
+    padding: 1em 0;
 }
 
 .about-item-v {
@@ -764,11 +770,18 @@ label #sign-two {
     max-width: 80px;
 }
 
-.about-container {
-
+.about-item ul {
+    margin-left: 1em;
 }
 
 @media (min-width: 1150px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
+    .about > div {
+        flex-basis: 49%;
+    }
 }
 /* ***** CONTAINER 2 END ***** */
