@@ -727,44 +727,8 @@ label #sign-two {
     text-align: center;
 }
 
-.container-2 .flex-column {
-    flex: 1 1 0;
-}
-    
-.about-item {
-    font-family: 'Open Sans', sans-serif;
-    padding: 5px 10px;
-    overflow: hidden;
-}
-
-.title {
+.container-2 .title {
     margin: 40px;
     max-width: 500px;
 }
-
-.about-item-text {
-    min-width: 0;
-    white-space: initial;
-}
-
-.about-item h3 {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.about-item .flex-image {
-    padding-right: 10px;
-}
-
-.about-item img {
-    max-width: 75px;
-    min-width: 45px;
-}
-
-@media (max-width: 1150px) {
-    .container-2 .flex-column {
-        flex: 1 1 100%;
-    }
-}
-
 /* ***** CONTAINER 2 END ***** */
