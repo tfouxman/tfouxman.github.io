@@ -12,8 +12,6 @@
 /* ***** HOVER.CSS FROM GITHUB START ***** */
 
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -42,8 +40,6 @@
     }
 }
 .hvr-pulse-grow {
-    display: inline-block;
-    vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -744,6 +740,7 @@ label #sign-two {
 .about-item {
     font-family: 'Open Sans', sans-serif;
     padding: 5px 10px;
+    overflow: hidden;
 }
 
 .title {
