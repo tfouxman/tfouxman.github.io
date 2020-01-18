@@ -35,11 +35,12 @@
             </label>
             <ul>
                 <div class="flex">
-                    <div class="left">
+                    <div class="left">                     
+                        <li class="hvr-grow"><a class="frame" href="#top"><img src="images/carrot.png" alt=""></a></li>
                         <li class="hvr-grow"><a href="#introduction"><h2>TF</h2></a></li>
                         <li class="hvr-grow"><a href="#about">About</a></li>
-                        <li class="hvr-grow"><a href="#">Projects</a></li>
-                        <li class="hvr-grow"><a href="#">Experience</a></li>
+                        <li class="hvr-grow"><a href="#projects">Projects</a></li>
+                        <li class="hvr-grow"><a href="#experience">Experience</a></li>
                     </div>
                     <div class="right flex-center">
                         <li class="hvr-grow"><a target=" " href="https://www.linkedin.com/in/tomfouxman/"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -112,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="container-2 container-area flex-column flex-nw borders">
+    <div class="container-2 container-area flex-column flex-nw borders" id="about">
         <div class="lightpurple title">
             <h1>About</h1>
         </div>
@@ -149,19 +150,20 @@
                     </div>
                 </div>
             </div>
-            <div class="about-container lightpurple">
+            <div class="about-container lightpurple interests">
                 <h2>Interests</h2>
                 <div class="about-item">
+                    <h3>Some of my interests include:</h3>
                     <ul>
-                        <li><p>Travel</p></li>
-                        <li><p>Photography</p></li>
-                        <li><p>Physical fitness</p></li>
-                        <li><p>Web development</p></li>
-                        <li><p>Video games</p></li>
+                        <li><h2>Travel</h2></li>
+                        <li><h2>Photography</h2></li>
+                        <li><h2>Fitness</h2></li>
+                        <li><h2>Web development</h2></li>
+                        <li><h2>Video games</h2></li>
                     </ul>  
                 </div>
             </div>
-            <div class="about-container gray">
+            <div class="about-container gray flex-gr-3 webinfo">
                 <h2>Website Information</h2>
                 <div class="about-item">
                     <h3>Online Repository</h3>
@@ -176,14 +178,14 @@
                 <div class="about-item">
                     <h3>Domain Host</h3>
                     <a href="https://domains.google.com/" target="_blank">
-                        <div class="flex-row flex-nw flex-j-c flex-gr-1">
-                            <div class="about-item-c flex-gr-1">
-                                <div class="about-item-v">
-                                    <h2>Google Domains</h2>
-                                </div>
-                            </div>
+                        <div class="flex-row flex-nw flex-j-t flex-gr-1">
                             <div class="about-image">
                                 <img src="images/google.png" alt="">
+                            </div>
+                            <div class="about-item-c flex-gr-1">
+                                <div class="about-item-v">
+                                    <h2 class="align-left">Google Domains</h2>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -201,5 +203,16 @@
             </div>
         </div>
     </div>
+    <div class="container-3 container-area flex-column flex-nw borders" id="projects">
+        <div class="purple title">
+            <h1>Projects</h1>
+        </div>
+    </div>
+    <div class="container-4 container-area flex-column flex-nw borders" id="experience">
+        <div class="gray title">
+            <h1>Experience</h1>
+        </div>
+    </div>
+
 </body>
 </html>

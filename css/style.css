@@ -409,7 +409,7 @@ nav .left a:hover {
 }
 
 nav h2:hover {
-    color: rgb(247, 119, 59);
+    color: rgb(255, 72, 0);
 }
 
 nav .right a:hover {
@@ -435,6 +435,25 @@ nav .right a:hover {
     color: #000;
     border-radius: 50%;
     background: #fff;
+}
+
+.frame:before,
+.frame_before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+nav .left :first-child {
+    margin: 0 auto;
+}
+
+nav ul li img {
+    max-width: 24px;
+    max-height: 40px;
+    padding-top: 0px;
+    vertical-align: top;
 }
 
 label #sign-one,
@@ -627,6 +646,23 @@ label #sign-two {
     background-color: rgb(228, 214, 189);
 }
 
+.container-2 h1,
+.container-2 h2,
+.container-3 h1,
+.container-3 h2,
+.container-4 h1, 
+.container-4 h2 {
+    font-family: Quicksand, sans-serif;
+    text-align: center;
+}
+
+.title {
+    margin: 40px;
+    max-width: 500px;
+    font-size: 50px;
+}
+
+
 /* ***** CONTAINER 1 START ***** */
 
 .boxes-res {
@@ -723,17 +759,6 @@ label #sign-two {
     font-size: 50px;
 }
 
-.container-2 h1,
-.container-2 h2 {
-    font-family: Quicksand, sans-serif;
-    text-align: center;
-}
-
-.container-2 .title {
-    margin: 40px;
-    max-width: 500px;
-}
-
 .about-container {
     padding: 1em 0;
 }
@@ -771,7 +796,19 @@ label #sign-two {
 }
 
 .about-item ul {
-    margin-left: 1em;
+    list-style-type: none;
+}
+
+.about-item ul li {
+    margin: 10px 0;
+}
+
+.about-item ul li h2 {
+    color: #fff;
+}
+
+.container-2 .align-left {
+    text-align: left;
 }
 
 @media (min-width: 1150px) {
@@ -783,5 +820,34 @@ label #sign-two {
     .about > div {
         flex-basis: 49%;
     }
+
+    .interests {
+        flex-basis: 30%;
+    }
+
+    .webinfo {
+        flex-basis: 70%;
+    }
 }
+
 /* ***** CONTAINER 2 END ***** */
+
+
+
+/* ***** CONTAINER 3 START ***** */
+
+.container-3 h1 {
+    font-size: 50px;
+}
+
+/* ***** CONTAINER 3 END ***** */
+
+
+
+/* ***** CONTAINER 4 START ***** */
+
+.container-4 h1 {
+    font-size: 50px;
+}
+
+/* ***** CONTAINER 4 END ***** */
