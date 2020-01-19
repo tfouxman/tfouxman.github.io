@@ -329,7 +329,7 @@ html.sr .load-hidden {
 /* ***** NAVBAR/FRONT PAGE START ***** */
 
 body {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Quicksand, sans-serif;
 }
 
 .sticky {
@@ -851,3 +851,9 @@ label #sign-two {
 }
 
 /* ***** CONTAINER 4 END ***** */
+
+/* ***** FOOTER ***** */
+footer {
+    text-align: center;
+    padding: 30px;
+}

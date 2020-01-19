@@ -1,12 +1,14 @@
 let anchorlinks = document.querySelectorAll('a[href^="#"]');
 window.sr = ScrollReveal({reset: true});
 
-
-// jQuery to wait for the document to load before starting typing and revealing animations
+// jQuery to wait for the document to load before starting typing and revealing animation
 $(document).ready(function() {
     $("#typewriter").addClass("typewriter").removeClass("hidden");
     $(".load-hidden").removeClass("load-hidden");
     sr.reveal('.banner-image', {duration: 2500, scale: 0, reset: false});
+    var d = new Date();
+    var currentYear = d.getFullYear();
+    document.querySelector("footer small").innerHTML = "Copyright &copy; " + currentYear + " Tom Fouxman";
 });
 
 for (let item of anchorlinks) {
