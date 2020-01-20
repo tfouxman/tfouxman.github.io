@@ -858,14 +858,6 @@ label #sign-two {
     .about > div {
         flex-basis: 49%;
     }
-
-    .interests {
-        flex-basis: 30%;
-    }
-
-    .webinfo {
-        flex-basis: 70%;
-    }
 }
 
 /* ***** CONTAINER 2 END ***** */
