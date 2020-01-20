@@ -228,6 +228,41 @@ html.sr .load-hidden {
     align-content: space-around;
 }
 
+.flex-ai-c {
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -box-align: center;
+    align-items: center;
+}
+
+.flex-ai-t {
+    -webkit-box-align: flex-start;
+    -moz-box-align: flex-start;
+    -box-align: flex-start;
+    align-items: flex-start;
+}
+
+.flex-ai-b {
+    -webkit-box-align: flex-end;
+    -moz-box-align: flex-end;
+    -box-align: flex-end;
+    align-items: flex-end;
+}
+
+.flex-ai-sb {
+    -webkit-box-align: space-between;
+    -moz-box-align: space-between;
+    -box-align: space-between;
+    align-items: space-between;
+}
+
+.flex-ai-sa {
+    -webkit-box-align: space-around;
+    -moz-box-align: space-around;
+    -box-align: space-around;
+    align-items: space-around;
+}
+
 .flex-sa-c {
     align-self: center;
 }
@@ -791,8 +826,11 @@ label #sign-two {
     margin: 0 .5em;
 }
 
-.about-image img {
+
+.about-item img {
     max-width: 80px;
+    margin-left: 1em;
+    padding-bottom: 1em;
 }
 
 .about-item ul {
@@ -840,6 +878,11 @@ label #sign-two {
     font-size: 50px;
 }
 
+.container-3 p {
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
 /* ***** CONTAINER 3 END ***** */
 
 
@@ -848,6 +891,16 @@ label #sign-two {
 
 .container-4 h1 {
     font-size: 50px;
+}
+
+.container-4 p {
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+.container-4 .reznet {
+    padding: 0;
+    border-radius: 50%;
 }
 
 /* ***** CONTAINER 4 END ***** */

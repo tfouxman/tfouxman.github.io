@@ -34,7 +34,6 @@ let sides = ['top', 'bottom', 'left', 'right']
 
 function allBoxes(node) {
     let sides = ['top', 'bottom', 'left', 'right']
-    let count = 0;
     for (var i = 0; i < node.childNodes.length; i++) {
         var child = node.childNodes[i];
         allBoxes(child);
@@ -42,7 +41,6 @@ function allBoxes(node) {
     let minmax = [2, 4];
     
     if ((node.tagName == 'DIV' && !node.firstChild) && node.nodeType != Node.TEXT_NODE) {
-        count++;
         let side = sides[Math.floor(Math.random() * (3 - 0 + 1)) + 0];
         let config = {
             scale: 0.5,
@@ -56,6 +54,7 @@ function allBoxes(node) {
 }
 
 let aboutItems = document.querySelectorAll('.about-container');
+var count = 0;
 for (var i = 0; i < aboutItems.length; i++) {
     let side = sides[Math.floor(Math.random() * (i - 0 + 1)) + 0];
     let config = {
@@ -63,7 +62,8 @@ for (var i = 0; i < aboutItems.length; i++) {
         origin: side,
         distance: '5px'
     }
-    let duration = 1000 * (Math.floor(Math.random() * ((i/2) * 1.15 - 1 + 1)) + 1);
+    count = i % 4;
+    let duration = 1000 * (Math.floor(Math.random() * ((count/2) * 1.15 - 1 + 1)) + 1);
     config.duration = duration;
     sr.reveal(aboutItems[i], config);
     
