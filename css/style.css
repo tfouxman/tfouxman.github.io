@@ -874,6 +874,11 @@ label #sign-two {
 
 /* ***** CONTAINER 3 START ***** */
 
+.container-3 {
+    background: linear-gradient(rgb(255, 253, 247), rgb(87, 84, 77));
+    height: auto;
+}
+
 .container-3 h1 {
     font-size: 50px;
 }
@@ -888,6 +893,11 @@ label #sign-two {
 
 
 /* ***** CONTAINER 4 START ***** */
+
+.container-4 {
+    background: linear-gradient(rgb(87, 84, 77), rgb(255, 253, 247));
+    height: auto;
+}
 
 .container-4 h1 {
     font-size: 50px;
