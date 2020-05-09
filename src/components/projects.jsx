@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
 
 class Projects extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <h2>Projects</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -16,7 +17,7 @@ class Projects extends Component {
           quibusdam neque ducimus est qui odio, molestias totam consequuntur
           maiores voluptates!
         </p>
-      </div>
+      </Container>
     );
   }
 }

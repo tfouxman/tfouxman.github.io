@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
 
 class Experience extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <h2>Experience</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -11,7 +12,7 @@ class Experience extends Component {
           iusto aliquid? Dolores exercitationem vel hic et dolore consequatur
           saepe veniam obcaecati facere odit?
         </p>
-      </div>
+      </Container>
     );
   }
 }
