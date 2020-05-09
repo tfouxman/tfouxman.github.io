@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Jumbotron from "./jumbotron";
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
+        <Jumbotron />
         <h2>Home</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
@@ -16,7 +18,7 @@ class Home extends Component {
           quibusdam neque ducimus est qui odio, molestias totam consequuntur
           maiores voluptates!
         </p>
-      </div>
+      </React.Fragment>
     );
   }
 }

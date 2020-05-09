@@ -23,6 +23,60 @@ const Styles = styled.div`
     right: 0;
     z-index: -1;
   }
+
+  .typewriter {
+    margin: auto;
+    display: inline-block;
+  }
+
+  .typewriter h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    border-right: 0.15em solid transparent;
+    letter-spacing: 0.2em;
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end 5;
+  }
+
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @-webkit-keyframes blink-caret {
+    from,
+    to {
+      border-color: orange;
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: orange;
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
 `;
 
 class Jumbotron extends Component {
@@ -32,8 +86,9 @@ class Jumbotron extends Component {
         <Jumbo fluid className="jumbo">
           <div className="overlay"></div>
           <Container>
-            <h1>Welcome</h1>
-            <p>Trash website!</p>
+            <div className="typewriter">
+              <h2>Tom Fouxman</h2>
+            </div>
           </Container>
         </Jumbo>
       </Styles>
