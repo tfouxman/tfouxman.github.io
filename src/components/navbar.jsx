@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Styles = styled.div`
   & {
     font-size: 20px;
+    user-select: none;
   }
 
   .navbar {
@@ -16,43 +17,14 @@ const Styles = styled.div`
   .navbar-nav .nav-link {
     color: #bbb;
 
+    &:active,
+    &:visited {
+      color: #bbb;
+    }
+
     &:hover {
       color: white;
     }
-  }
-`;
-
-const Instagram = styled.div`
-  .fa-instagram:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    background: linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    /* color: transparent; */
-    -webkit-background-clip: text;
-    background-clip: text;
   }
 `;
 
@@ -83,31 +55,23 @@ class NavigationBar extends Component {
             </svg>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="pl-1 pl-md-0">
             <Nav className="ml-auto">
-              <Nav.Item className="fa-instagram">
-                <Nav.Link href="/">
-                  <Instagram>
-                    <FontAwesomeIcon
-                      className="fa-instagram"
-                      icon={["fab", "instagram"]}
-                      size="lg"
-                    />
-                  </Instagram>
-                </Nav.Link>
-              </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/">
+                <Nav.Link
+                  target=" "
+                  href="https://www.linkedin.com/in/tomfouxman/"
+                >
                   <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/">
+                <Nav.Link target=" " href="https://github.com/tfouxman/">
                   <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/projects">Projects</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link href="/experience">Experience</Nav.Link>

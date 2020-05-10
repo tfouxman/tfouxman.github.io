@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Home from "./components/home";
-import Projects from "./components/projects";
+import About from "./components/about";
 import Experience from "./components/experience";
 import NoMatch from "./components/noMatch";
 import NavigationBar from "./components/navbar";
@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
           <Route path="/brendalini" component={Brendalini} />
           <Route component={NoMatch} />

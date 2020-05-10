@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 
-class Projects extends Component {
+class About extends Component {
   render() {
     return (
       <Container>
-        <h2>Projects</h2>
+        <h2>About</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
           molestias laborum voluptatibus fugiat maxime blanditiis accusantium
@@ -22,4 +22,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default About;
