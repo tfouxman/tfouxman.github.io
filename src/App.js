@@ -11,8 +11,18 @@ import NoMatch from "./components/noMatch";
 import NavigationBar from "./components/navbar";
 import Footer from "./components/footer";
 import Brendalini from "./components/brendalini";
+import Unity, { UnityContent } from "react-unity-webgl";
 
 library.add(fab);
+
+const unityContent = new UnityContent(
+  "Build/SHMUP.json",
+  "Build/UnityLoader.js"
+);
+
+const unityObject = (
+  <Unity unityContent={unityContent} width="450px" height="600px" />
+);
 
 function App() {
   return (
@@ -23,7 +33,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
-          <Route path="/shmup" component={Shmup} />
+          <Route
+            path="/shmup"
+            render={(props) => <Shmup {...props} unityContent={unityObject} />}
+          />
           <Route path="/brendalini" component={Brendalini} />
           <Route component={NoMatch} />
         </Switch>

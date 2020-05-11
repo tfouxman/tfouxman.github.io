@@ -287,7 +287,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/shmup.png")}
                     />
                     <Card.Body>
                       <Card.Title>Classic SHMUP Game (Unity)</Card.Title>
@@ -351,57 +351,6 @@ class Home extends Component {
                   </Card>
                 </Col>
               </Row>
-              {/* <Row className="row justify-content-around projects">
-                <h1 className="col-10 col-md-11 display-4 mb-3">Projects</h1>
-                <div className="col-10 col-md-5">
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                      <Card.Title>COVID-19 Tracker</Card.Title>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      <Card.Footer>
-                    <Button variant="secondary">View on Github</Button>
-                    <Button variant="primary">Demo</Button>
-                  </Card.Footer>
-                    </Card.Body>
-                  </Card>
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      Android App for Bad Habits (Java)
-                    </div>
-                  </a>
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      Database Management System
-                    </div>
-                  </a>
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      Classic SHMUP Game (Unity)
-                    </div>
-                  </a>
-                </div>
-                <div className="col-10 col-md-5">
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      Multi-User Multi-Transaction Server
-                    </div>
-                  </a>
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      P2P Network with Image Search (JS)
-                    </div>
-                  </a>
-                  <a href="">
-                    <div className="p-3 mb-2 bg-dark rounded hvr-grow">
-                      Full Stack Web Application (Angular)
-                    </div>
-                  </a>
-                </div>
-              </Row> */}
             </Container>
           </Jumbo>
         </Styles>

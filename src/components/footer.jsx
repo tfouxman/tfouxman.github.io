@@ -27,9 +27,9 @@ class Footer extends Component {
               .
             </p>
             <p className="lead">
-              This website was made with{" "}
+              Made with{" "}
               <a target=" " href="https://reactjs.org/">
-                <code>React.js</code>
+                <code>React.js</code>.
               </a>
             </p>
           </Container>

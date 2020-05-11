@@ -1,16 +1,29 @@
 import React, { Component } from "react";
-import Unity, { UnityContent } from "react-unity-webgl";
+import styled from "styled-components";
+
+const Styles = styled.div`
+  & {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #373940;
+  }
+
+  .game {
+    height: 600px;
+    width: 450px;
+    border: 2px solid black;
+  }
+`;
 
 class Shmup extends Component {
-  constructor(props) {
-    super(props);
-    const unityContent = new UnityContent(
-      "../assets/SHMUP/SHMUPbuild.json",
-      "../assets/SHMUP/UnityLoader.js"
-    );
-  }
   render() {
-    return <Unity unityContent={this.unityContent} />;
+    return (
+      <Styles>
+        <div className="game">{this.props.unityContent}</div>
+      </Styles>
+    );
   }
 }
 
