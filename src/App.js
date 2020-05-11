@@ -6,6 +6,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import Home from "./components/home";
 import About from "./components/about";
 import Experience from "./components/experience";
+import Shmup from "./components/shmup";
 import NoMatch from "./components/noMatch";
 import NavigationBar from "./components/navbar";
 import Footer from "./components/footer";
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/experience" component={Experience} />
+          <Route path="/shmup" component={Shmup} />
           <Route path="/brendalini" component={Brendalini} />
           <Route component={NoMatch} />
         </Switch>

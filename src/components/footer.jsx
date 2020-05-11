@@ -15,7 +15,7 @@ class Footer extends Component {
     return (
       <Styles>
         <Jumbo fluid>
-          <Container>
+          <Container fluid>
             <p className="lead">
               The repository for this website can be found{" "}
               <a
