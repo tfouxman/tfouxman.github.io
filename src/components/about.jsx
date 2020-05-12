@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 
 class About extends Component {
+  componentDidMount() {
+    document.title = "About";
+  }
+
   render() {
     return (
       <Container>

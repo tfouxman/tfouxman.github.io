@@ -107,6 +107,7 @@ const Styles = styled.div`
 
 class Home extends Component {
   componentDidMount() {
+    document.title = "Tom Fouxman";
     this.strings = ["Tom Fouxman"];
     const options = {
       strings: this.strings,

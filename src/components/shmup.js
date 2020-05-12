@@ -22,6 +22,10 @@ const Styles = styled.div`
 `;
 
 class Shmup extends Component {
+  componentDidMount() {
+    document.title = "SHMUP Game";
+  }
+
   render() {
     return (
       <Styles>

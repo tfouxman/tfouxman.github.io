@@ -35,6 +35,7 @@ class Covid extends Component {
   };
 
   async componentDidMount() {
+    document.title = "Covid-19 Tracker";
     const fetchedData = await fetchData();
 
     this.setState({ data: fetchedData });

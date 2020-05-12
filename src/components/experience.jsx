@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 
 class Experience extends Component {
+  componentDidMount() {
+    document.title = "Experience";
+  }
+
   render() {
     return (
       <Container>
