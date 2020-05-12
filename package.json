@@ -1,7 +1,8 @@
 {
   "name": "tfouxman.github.io",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "private": true,
+  "homepage": "https://tomfouxman.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

@@ -190,7 +190,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/covidapp.png")}
                     />
                     <Card.Body>
                       <Card.Title>COVID-19 Tracker</Card.Title>
@@ -200,8 +200,16 @@ class Home extends Component {
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      <Button variant="secondary">View on Github</Button>
-                      <Button variant="primary">Demo</Button>
+                      <Button
+                        target="_blank"
+                        href="https://github.com/tfouxman/tfouxman.github.io/tree/React-Code/src/components/Covid"
+                        variant="secondary"
+                      >
+                        View on Github
+                      </Button>
+                      <Button href="/covid" variant="primary">
+                        Demo
+                      </Button>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -224,13 +232,19 @@ class Home extends Component {
                     </Card.Body>
                     <Card.Footer>
                       <Button
-                        target=" "
+                        target="_blank"
                         href="https://github.com/tfouxman/SE3350-Android_Application"
                         variant="secondary"
                       >
                         View on Github
                       </Button>
-                      <Button variant="primary">Demo</Button>
+                      <Button
+                        target="_blank"
+                        href="https://www.youtube.com/watch?v=z14ogKdjQAg&t=405s"
+                        variant="primary"
+                      >
+                        Demo
+                      </Button>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -281,7 +295,6 @@ class Home extends Component {
                       >
                         View on Github
                       </Button>
-                      <Button variant="primary">Demo</Button>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -333,7 +346,6 @@ class Home extends Component {
                       >
                         View on Github
                       </Button>
-                      <Button variant="primary">Demo</Button>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -358,10 +370,6 @@ class Home extends Component {
                         simulate a chat between multiple users. C++ and Python.
                       </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                      <Button variant="secondary">View on Github</Button>
-                      <Button variant="primary">Demo</Button>
-                    </Card.Footer>
                   </Card>
                 </Col>
               </Row>

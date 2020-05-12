@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Styles = styled.div`
   & {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 70%;
   }
@@ -14,6 +15,16 @@ const Styles = styled.div`
     & {
       width: 100%;
     }
+  }
+
+  .footer p {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
   }
 `;
 
@@ -76,7 +87,30 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     />
   ) : null;
 
-  return <Styles>{country ? barChart : lineChart}</Styles>;
+  return (
+    <Styles>
+      {country ? barChart : lineChart}
+      <div className="footer">
+        <p>
+          The source of the API used is{" "}
+          <a target=" " href="https://github.com/mathdroid/covid-19-api">
+            here
+          </a>
+          .
+        </p>
+        <p>
+          The repo used for reference is{" "}
+          <a
+            target=" "
+            href="https://github.com/adrianhajdin/project_corona_tracker"
+          >
+            here
+          </a>
+          .
+        </p>
+      </div>
+    </Styles>
+  );
 };
 
 export default Chart;
