@@ -6,6 +6,8 @@ import { fetchCountries } from "./api";
 
 const Styles = styled.div`
   & {
+    display: flex;
+    justify-content: center;
     width: 30%;
     margin-bottom: 30px !important;
   }
