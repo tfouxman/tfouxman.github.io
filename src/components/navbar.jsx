@@ -71,6 +71,9 @@ class NavigationBar extends Component {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
+                <Nav.Link href="/covid">Covid-19 Tracker</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
                 <Nav.Link href="/about">About</Nav.Link>
               </Nav.Item>
               <Nav.Item>

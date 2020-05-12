@@ -209,14 +209,17 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/latesleeper.png")}
+                      style={{ borderBottom: "2px solid #373940" }}
                     />
                     <Card.Body>
-                      <Card.Title>Android App for Bad Habits (Java)</Card.Title>
+                      <Card.Title>
+                        Android App for Sleeping Late (Java)
+                      </Card.Title>
                       <Card.Text>
-                        An android app that helps the user discontinue a bad
-                        habit by using the 4-step process. Firebase was used for
-                        the user database.
+                        An android app that helps the user discontinue staying
+                        up late by using the 4-step process. Firebase was used
+                        for the user database.
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -235,7 +238,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/p2p.png")}
                     />
                     <Card.Body>
                       <Card.Title>
@@ -248,7 +251,6 @@ class Home extends Component {
                     </Card.Body>
                     <Card.Footer>
                       <Button variant="secondary">View on Github</Button>
-                      <Button variant="primary">Demo</Button>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -262,7 +264,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/fullstack.png")}
                     />
                     <Card.Body>
                       <Card.Title>Full Stack Web Application</Card.Title>
@@ -297,7 +299,13 @@ class Home extends Component {
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      <Button variant="secondary">View on Github</Button>
+                      <Button
+                        target="_blank"
+                        href="https://github.com/tfouxman/SE2250_Project_rsinge_tfouxman_mdsilva6"
+                        variant="secondary"
+                      >
+                        View on Github
+                      </Button>
                       <Button href="/shmup" variant="primary">
                         Demo
                       </Button>
@@ -308,7 +316,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/dbms.png")}
                     />
                     <Card.Body>
                       <Card.Title>Database Management System</Card.Title>
@@ -318,7 +326,13 @@ class Home extends Component {
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      <Button variant="secondary">View on Github</Button>
+                      <Button
+                        target="_blank"
+                        href="https://github.com/tfouxman/CourseSelectorDBMS"
+                        variant="secondary"
+                      >
+                        View on Github
+                      </Button>
                       <Button variant="primary">Demo</Button>
                     </Card.Footer>
                   </Card>
@@ -333,7 +347,7 @@ class Home extends Component {
                   <Card style={{ width: "18rem" }}>
                     <Card.Img
                       variant="top"
-                      src={require("../assets/100px180.svg")}
+                      src={require("../assets/chat.png")}
                     />
                     <Card.Body>
                       <Card.Title>

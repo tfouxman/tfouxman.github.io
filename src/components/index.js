@@ -1,0 +1,9 @@
+export { default as Home } from "./home";
+export { default as About } from "./about";
+export { default as Experience } from "./experience";
+export { default as Covid } from "./Covid/covid";
+export { default as Shmup } from "./shmup";
+export { default as NoMatch } from "./noMatch";
+export { default as NavigationBar } from "./navbar";
+export { default as Footer } from "./footer";
+export { default as Brendalini } from "./brendalini";
