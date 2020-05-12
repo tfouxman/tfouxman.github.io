@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e9639a40.chunk.css",
+    "main.js": "/static/js/main.bb4c0d94.chunk.js",
+    "main.js.map": "/static/js/main.bb4c0d94.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0f9d556a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0f9d556a.js.map",
+    "static/js/2.a0d680fa.chunk.js": "/static/js/2.a0d680fa.chunk.js",
+    "static/js/2.a0d680fa.chunk.js.map": "/static/js/2.a0d680fa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4c9b8b5177398f085ff5ca456ab796cf.js": "/precache-manifest.4c9b8b5177398f085ff5ca456ab796cf.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e9639a40.chunk.css.map": "/static/css/main.e9639a40.chunk.css.map",
+    "static/js/2.a0d680fa.chunk.js.LICENSE.txt": "/static/js/2.a0d680fa.chunk.js.LICENSE.txt",
+    "static/media/autodata.png": "/static/media/autodata.e1322549.png",
+    "static/media/brendalini.jpg": "/static/media/brendalini.63449b2a.jpg",
+    "static/media/covid.png": "/static/media/covid.d7265326.png",
+    "static/media/covidapp.png": "/static/media/covidapp.d429aa1a.png",
+    "static/media/dbms.png": "/static/media/dbms.dd0e327d.png",
+    "static/media/fullstack.png": "/static/media/fullstack.5626521b.png",
+    "static/media/kayak.jpg": "/static/media/kayak.ddc95f74.jpg",
+    "static/media/lagos.jpg": "/static/media/lagos.8fc37ba4.jpg",
+    "static/media/latesleeper.png": "/static/media/latesleeper.61e99fb4.png",
+    "static/media/p2p.png": "/static/media/p2p.9df0bf81.png",
+    "static/media/shmup.png": "/static/media/shmup.e9781366.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f9d556a.js",
+    "static/js/2.a0d680fa.chunk.js",
+    "static/css/main.e9639a40.chunk.css",
+    "static/js/main.bb4c0d94.chunk.js"
+  ]
+}
