@@ -30,8 +30,8 @@ const unityObject = (
 function App() {
   return (
     <React.Fragment>
-      <NavigationBar />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        <NavigationBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />

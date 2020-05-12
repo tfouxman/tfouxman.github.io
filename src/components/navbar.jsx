@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Styles = styled.div`
   & {
@@ -33,7 +34,7 @@ class NavigationBar extends Component {
     return (
       <Styles>
         <Navbar expand="lg">
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to="/">
             <svg
               className="bi bi-house-fill"
               width="1.5em"
@@ -71,16 +72,24 @@ class NavigationBar extends Component {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/covid">Covid-19 Tracker</Nav.Link>
+                <Nav.Link as={Link} to="/covid">
+                  Covid-19 Tracker
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link as={Link} to="/about">
+                  About
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/experience">Experience</Nav.Link>
+                <Nav.Link as={Link} to="/experience">
+                  Experience
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/gallery">Photo Gallery</Nav.Link>
+                <Nav.Link as={Link} to="/gallery">
+                  Photo Gallery
+                </Nav.Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
