@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Jumbotron as Jumbo,
   Container,
@@ -9,25 +10,33 @@ import {
 } from "react-bootstrap";
 import styled from "styled-components";
 import Typed from "typed.js";
-import lagos from "../assets/lagos.jpg";
 import kayak from "../assets/kayak.jpg";
+import lagos from "../assets/lagos.jpg";
 import autodata from "../assets/autodata.png";
 
 const Styles = styled.div`
   .overlay {
-    background-color: #000;
-    opacity: 0.7;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 2;
+  }
+
+  .load {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 
   .jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(${lagos}) no-repeat fixed bottom;
-    background-size: cover;
     margin-bottom: 0;
     color: #efefef;
     height: auto;
@@ -88,24 +97,107 @@ const Styles = styled.div`
     }
   }
 
-  .hvr-grow {
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+  .sk-chase {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
   }
-  .hvr-grow:hover,
-  .hvr-grow:focus,
-  .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: sk-chase-dot 2s infinite ease-in-out both;
+  }
+
+  .sk-chase-dot:before {
+    content: "";
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2s infinite ease-in-out both;
+  }
+
+  .sk-chase-dot:nth-child(1) {
+    animation-delay: -1.1s;
+  }
+  .sk-chase-dot:nth-child(2) {
+    animation-delay: -1s;
+  }
+  .sk-chase-dot:nth-child(3) {
+    animation-delay: -0.9s;
+  }
+  .sk-chase-dot:nth-child(4) {
+    animation-delay: -0.8s;
+  }
+  .sk-chase-dot:nth-child(5) {
+    animation-delay: -0.7s;
+  }
+  .sk-chase-dot:nth-child(6) {
+    animation-delay: -0.6s;
+  }
+  .sk-chase-dot:nth-child(1):before {
+    animation-delay: -1.1s;
+  }
+  .sk-chase-dot:nth-child(2):before {
+    animation-delay: -1s;
+  }
+  .sk-chase-dot:nth-child(3):before {
+    animation-delay: -0.9s;
+  }
+  .sk-chase-dot:nth-child(4):before {
+    animation-delay: -0.8s;
+  }
+  .sk-chase-dot:nth-child(5):before {
+    animation-delay: -0.7s;
+  }
+  .sk-chase-dot:nth-child(6):before {
+    animation-delay: -0.6s;
+  }
+
+  @keyframes sk-chase {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes sk-chase-dot {
+    80%,
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4);
+    }
+    100%,
+    0% {
+      transform: scale(1);
+    }
   }
 `;
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true,
+    };
+
+    this.img = new Image();
+    this.img.onload = () => {
+      this.setState({ loading: false });
+    };
+    this.img.src = lagos;
+  }
+
   componentDidMount() {
     document.title = "Tom Fouxman";
     this.strings = ["Tom Fouxman"];
@@ -127,7 +219,28 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Styles>
-          <Jumbo fluid>
+          <Jumbo
+            fluid
+            style={{
+              background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${this.img.src}) no-repeat fixed bottom`,
+              backgroundSize: `cover`,
+            }}
+          >
+            {this.state.loading ? (
+              <React.Fragment>
+                <div className="overlay"></div>
+                <div className="load">
+                  <div className="sk-chase">
+                    <div className="sk-chase-dot"></div>
+                    <div className="sk-chase-dot"></div>
+                    <div className="sk-chase-dot"></div>
+                    <div className="sk-chase-dot"></div>
+                    <div className="sk-chase-dot"></div>
+                    <div className="sk-chase-dot"></div>
+                  </div>
+                </div>
+              </React.Fragment>
+            ) : null}
             <Container>
               <Row className="align-items-center justify-content-around pb-5">
                 <Col md={6} className="pb-4">
@@ -208,7 +321,7 @@ class Home extends Component {
                       >
                         View on Github
                       </Button>
-                      <Button href="/covid" variant="primary">
+                      <Button as={Link} to="/covid" variant="primary">
                         Demo
                       </Button>
                     </Card.Footer>
@@ -320,7 +433,7 @@ class Home extends Component {
                       >
                         View on Github
                       </Button>
-                      <Button href="/shmup" variant="primary">
+                      <Button as={Link} to="/shmup" variant="primary">
                         Demo
                       </Button>
                     </Card.Footer>
