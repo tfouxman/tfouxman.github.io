@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {
   Jumbotron as Jumbo,
@@ -15,27 +15,6 @@ import lagos from "../assets/lagos.jpg";
 import autodata from "../assets/autodata.png";
 
 const Styles = styled.div`
-  .overlay {
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  .load {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-  }
-
   .jumbotron {
     margin-bottom: 0;
     color: #efefef;
@@ -95,6 +74,29 @@ const Styles = styled.div`
     50% {
       border-color: transparent;
     }
+  }
+`;
+
+const Loading = styled.div`
+  .overlay {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .load {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 
   .sk-chase {
@@ -188,14 +190,9 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true,
+      loaded: false,
+      error: false,
     };
-
-    this.img = new Image();
-    this.img.onload = () => {
-      this.setState({ loading: false });
-    };
-    this.img.src = lagos;
   }
 
   componentDidMount() {
@@ -208,7 +205,19 @@ class Home extends Component {
       cursorChar: "",
     };
 
-    this.typed = new Typed(this.el, options);
+    const img = new Image();
+    img.onload = () => {
+      this.setState({
+        loaded: true,
+      });
+      this.typed = new Typed(this.el, options);
+    };
+    img.onerror = () => {
+      this.setState({
+        error: true,
+      });
+    };
+    img.src = lagos;
   }
 
   componentWillUnmount() {
@@ -216,31 +225,34 @@ class Home extends Component {
   }
 
   render() {
-    return (
-      <React.Fragment>
+    if (!this.state.loaded)
+      return (
+        <Loading>
+          <div className="overlay"></div>
+          <div className="load">
+            <div className="sk-chase">
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+            </div>
+          </div>
+        </Loading>
+      );
+    else
+      return (
         <Styles>
           <Jumbo
             fluid
             style={{
-              background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${this.img.src}) no-repeat fixed bottom`,
+              background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${
+                this.state.error ? "" : lagos
+              }) no-repeat fixed bottom`,
               backgroundSize: `cover`,
             }}
           >
-            {this.state.loading ? (
-              <React.Fragment>
-                <div className="overlay"></div>
-                <div className="load">
-                  <div className="sk-chase">
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                  </div>
-                </div>
-              </React.Fragment>
-            ) : null}
             <Container>
               <Row className="align-items-center justify-content-around pb-5">
                 <Col md={6} className="pb-4">
@@ -490,8 +502,7 @@ class Home extends Component {
             </Container>
           </Jumbo>
         </Styles>
-      </React.Fragment>
-    );
+      );
   }
 }
 

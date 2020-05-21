@@ -44,8 +44,8 @@ function App() {
           <Route path="/brendalini" component={Brendalini} />
           <Route component={NoMatch} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </React.Fragment>
   );
 }
