@@ -76,7 +76,7 @@ class NavigationBar extends Component {
                   COVID-19 Tracker
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              {/* <Nav.Item>
                 <Nav.Link as={Link} to="/about">
                   About
                 </Nav.Link>
@@ -90,7 +90,7 @@ class NavigationBar extends Component {
                 <Nav.Link as={Link} to="/gallery">
                   Gallery
                 </Nav.Link>
-              </Nav.Item>
+              </Nav.Item> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
