@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MenuItem } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div`
